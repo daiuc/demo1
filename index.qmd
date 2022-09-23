@@ -12,4 +12,8 @@ page-layout: full
 title-block-banner: true
 ---
 
+[slides](slides/2022-09-23-snakemake-quarto.qmd)
+
+
+
 

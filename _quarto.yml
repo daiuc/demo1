@@ -8,6 +8,9 @@ project:
     - "!data/"
     - "!output"
 
+execute: 
+  freeze: auto
+
 website:
   title: "demo1"
   navbar:
