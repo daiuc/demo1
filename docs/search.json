@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "slides/2022-09-23-snakemake-quarto.html#agenda",
+    "href": "slides/2022-09-23-snakemake-quarto.html#agenda",
+    "title": "demo1",
+    "section": "Agenda",
+    "text": "Agenda\n\nSet up midway2/3 environment\nReproducible workflow\nScientific writing with quarto\nPublish your project website"
+  },
+  {
+    "objectID": "slides/2022-09-23-snakemake-quarto.html#my-midway2-environment",
+    "href": "slides/2022-09-23-snakemake-quarto.html#my-midway2-environment",
+    "title": "demo1",
+    "section": "My midway2 environment",
+    "text": "My midway2 environment\n\nconda:\n\ninstall miniconda to scratch\nset up env: e.g. smk - binaries and packages, e.g. R, python, jupyter, snakemake\n\nanalyses:\n\njupyter lab\nRstudio & R via singularity\nCustom start-up script to launch jupyter lab and rstudio in a compute node\n\nshell config\n\nzsh/bash profile (PATH)\n.R.environ\nvscode / code-server + extensions"
+  },
+  {
+    "objectID": "slides/2022-09-23-snakemake-quarto.html#my-hpc-environment-demo",
+    "href": "slides/2022-09-23-snakemake-quarto.html#my-hpc-environment-demo",
+    "title": "demo1",
+    "section": "My HPC environment demo",
+    "text": "My HPC environment demo\nMy favorite features:\n\nrun my own rstudio server with my choice of R version\nrun my own jupyter lab\naccess jupyter and rstudio from browser (no vpn with port forwarding)\nrun code-server and ssh from browser"
+  },
+  {
+    "objectID": "slides/2022-09-23-snakemake-quarto.html#reproducible-pipeline",
+    "href": "slides/2022-09-23-snakemake-quarto.html#reproducible-pipeline",
+    "title": "demo1",
+    "section": "Reproducible pipeline",
+    "text": "Reproducible pipeline\n\nset up project with cookiecutter\nsnakemake: manage workflow\nquarto: data analysis / plots / writings / slides"
+  },
+  {
+    "objectID": "slides/2022-09-23-snakemake-quarto.html#reproducible-pipeline---demo",
+    "href": "slides/2022-09-23-snakemake-quarto.html#reproducible-pipeline---demo",
+    "title": "demo1",
+    "section": "Reproducible pipeline - demo",
+    "text": "Reproducible pipeline - demo\n\nuse cookiecutter to create a snakemake-quarto repository\nkey components:\n\nrules (show dag)\nprofiles ($HOME vs. project)\nconfig yaml\nmodulization\nconda environment (optional)\n\ndemo a real project"
+  },
+  {
+    "objectID": "slides/2022-09-23-snakemake-quarto.html#scientific-writing-with-quarto",
+    "href": "slides/2022-09-23-snakemake-quarto.html#scientific-writing-with-quarto",
+    "title": "demo1",
+    "section": "Scientific writing with quarto",
+    "text": "Scientific writing with quarto\nBenefits:\n\n\n\nwrite in markdown instead of LaTeX\ncross reference\nintegration with citation manager such as zotero\ntable/figure generation via code chunks\npublish to github page\n\n\n\n\n\nfully compatible with pandoc\nsimultaneously output to multiple format (html, pdf, docx, etc.)\nfully extensible with html / latex should you need finer control"
+  },
+  {
+    "objectID": "slides/2022-09-23-snakemake-quarto.html#scientific-writing---quick-demo",
+    "href": "slides/2022-09-23-snakemake-quarto.html#scientific-writing---quick-demo",
+    "title": "demo1",
+    "section": "Scientific writing - quick demo",
+    "text": "Scientific writing - quick demo\n\n\nWhat you need:\n\nrstudio (v2022.07+) + R | jupyter | vscode\nquarto\n\n\n\n\nworkflow:\n\nwrite in markdown\nconfigure header yaml if fancy\nrender"
+  },
+  {
+    "objectID": "slides/2022-09-23-snakemake-quarto.html#set-up-your-project-website",
+    "href": "slides/2022-09-23-snakemake-quarto.html#set-up-your-project-website",
+    "title": "demo1",
+    "section": "Set up your project website",
+    "text": "Set up your project website\nBenefits:\n\ndocument your project progression\norganize your notes (use Notion)\nshare and communicate your results\n\nAbout Notion:\n\nweb-based, thus easy to share or integrate\ngood markdown support\nsimple relational database features\nother useful features and extensions\nget pro license for free with your UC email"
+  },
+  {
+    "objectID": "slides/2022-09-23-snakemake-quarto.html#set-up-your-project-website---demo",
+    "href": "slides/2022-09-23-snakemake-quarto.html#set-up-your-project-website---demo",
+    "title": "demo1",
+    "section": "Set up your project website - demo",
+    "text": "Set up your project website - demo\n\nKas-seq site"
+  },
+  {
+    "objectID": "slides/2022-09-23-snakemake-quarto.html#section",
+    "href": "slides/2022-09-23-snakemake-quarto.html#section",
+    "title": "demo1",
+    "section": "",
+    "text": "Thank you!\n\n\n\n\nResources:\n\nquarto\nsnakemake\ncode-server\nvscode\nrockr singularity project\nrstudio image"
+  },
+  {
+    "objectID": "slides/2022-09-23-snakemake-quarto.html#a",
+    "href": "slides/2022-09-23-snakemake-quarto.html#a",
+    "title": "demo1",
+    "section": "a",
+    "text": "a\n resources:\n\nquarto\nsnakemake\ncode-server\nvscode\nrockr singularity project\nrstudio image"
+  }
+]

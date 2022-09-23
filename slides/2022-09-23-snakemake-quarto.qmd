@@ -1,0 +1,180 @@
+---
+format: 
+  revealjs:
+    theme: default
+    logo: "UChicago-logo.png"
+    slide-number: true
+    show-slide-number: all
+    center: false
+---
+
+# Make midway better for you {.absolute top="1" background-image="background.jpg" background-opacity="0.2"}
+
+Chao Dai
+
+9/26/22
+
+------------------------------------------------------------------------
+
+## Agenda {background-image="background.jpg" background-opacity="0.1"}
+
+-   Set up midway2/3 environment
+-   Reproducible workflow
+-   Scientific writing with quarto
+-   Publish your project website
+
+------------------------------------------------------------------------
+
+## My midway2 environment {.smaller background-image="code.jpg" background-opacity="0.1"}
+
+-   conda:
+    -   install miniconda to **`scratch`**
+
+    -   set up env: e.g. smk - binaries and packages, e.g. R, python, jupyter, snakemake
+-   analyses:
+    -   jupyter lab
+
+    -   Rstudio & R via singularity
+
+    -   Custom start-up script to launch jupyter lab and rstudio in a compute node
+-   shell config
+    -   zsh/bash profile (`PATH`)
+
+    -   `.R.environ`
+
+    -   vscode / code-server + extensions
+
+------------------------------------------------------------------------
+
+## My HPC environment demo {.smaller background-image="code.jpg" background-opacity="0.1"}
+
+My favorite features: 
+
+- run my own rstudio server with my choice of R version
+- run my own jupyter lab
+- access jupyter and rstudio from browser (no vpn with port forwarding)
+- run code-server and ssh from browser
+
+------------------------------------------------------------------------
+
+## Reproducible pipeline {background-image="sand.jpg" background-opacity="0.2"}
+
+-   set up project with [cookiecutter](https://github.com/daiuc/cookiecutter-quarto-smk)
+-   snakemake: manage workflow
+-   quarto: data analysis / plots / writings / slides
+
+------------------------------------------------------------------------
+
+## Reproducible pipeline - demo {.smaller background-image="sand.jpg" background-opacity="0.2"}
+
+1.  use cookiecutter to create a snakemake-quarto repository
+2.  key components:
+    -   rules (show dag)
+    -   profiles ($HOME vs. project)
+    -   config yaml
+    -   modulization
+    -   conda environment (optional)
+3.  demo a real project
+
+------------------------------------------------------------------------
+
+## Scientific writing with quarto {.smaller background-image="pen.jpg" background-opacity="0.1"}
+
+#### Benefits:
+
+:::: {.columns}
+::: {.column width="48%"}
+-   write in markdown instead of LaTeX
+-   cross reference
+-   integration with citation manager such as zotero
+-   table/figure generation via code chunks
+-   publish to github page
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+-   fully compatible with pandoc
+-   simultaneously output to multiple format (html, pdf, docx, etc.)
+-   fully extensible with html / latex should you need finer control
+:::
+::::
+
+------------------------------------------------------------------------
+
+## Scientific writing - quick demo {.smaller background-image="pen.jpg" background-opacity="0.1"}
+
+:::: {.columns}
+::: {.column width="48%"}
+What you need:
+
+- rstudio (v2022.07+) + R | jupyter | vscode
+- [quarto](https://github.com/quarto-dev/quarto-cli)
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+workflow:
+
+1. write in markdown
+2. configure header yaml if fancy
+3. render
+:::
+::::
+------------------------------------------------------------------------
+
+## Set up your project website {.smaller background-image="bulbs.jpg" background-opacity="0.2"}
+
+Benefits:
+
+-   document your project progression
+-   organize your notes (use Notion)
+-   share and communicate your results
+
+About Notion:
+
+-   web-based, thus easy to share or integrate
+-   good markdown support
+-   simple relational database features
+-   other useful features and extensions
+-   get pro license for free with your UC email
+
+------------------------------------------------------------------------
+
+## Set up your project website - demo { background-image="bulbs.jpg" background-opacity="0.2" }
+::: {.absolute left="40%" top="30%"}
+[Kas-seq site](http://daiuc.github.io/kas-seq)
+:::
+------------------------------------------------------------------------
+
+## {background-image="coffee.jpg" background-opacity="0.2"}
+
+:::: {.columns}
+
+::: {.column width="40%" layout-valign="center"}
+::::: {.r-fit-text style="color:#00B4FF"}
+<br>
+*Thank you!* 
+:::::
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="50%"}
+
+Resources: 
+
+- [quarto](https://quarto.org/docs/guide/)
+- [snakemake](https://snakemake.readthedocs.io/en/stable/)
+- [code-server](https://coder.com/docs/code-server/latest/guide)
+- [vscode](https://code.visualstudio.com)
+- [rockr singularity project](https://rocker-project.org/use/singularity.html)
+- [rstudio image](https://hub.docker.com/repository/docker/bajiame/rstudio)
+:::
+::::
+
+------------------------------------------------------------------------
